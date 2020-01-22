@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body> 
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">PUG SURVEY FORM</h1>
+            <p id="description" class="text-center">HELP US TO HELP OTHER PUGS</p>
+        </header>
+        <div class="div-form">
+            <form id="survey-form">
+                       <section class="form-group">
+                        <label id="name-label" for="name">INTRODUCE YOUR NAME</label><br>
+                        <input type="text" 
+                        name="name"
+                        id="name"
+                        placeholder="NAME HERE"
+                        required>
+                       </section>
+                       <section class="form-group">
+                        <label id="email-label" for="email">INTRODUCE YOUR EMAIL</label><br>
+                        <input type="email" 
+                        name="email" 
+                        id="email"
+                        placeholder="EMAIL HERE" 
+                        required>
+                    </section>
+                    <section class="form-group">
+                        <label id="age-label" for="age">INTRODUCE YOUR AGE</label><br>
+                        <input type="number" 
+                        name="age"
+                        id="age" 
+                        min="0"
+                        max="99"
+                        placeholder="AGE HERE"
+                        required 
+                        >
+                    </section>
+                    <section class="form-group">
+                        <label for="dropdown" id="dropdown-label">DROPDOWNEA ALGO</label>
+                    </section>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+</body>
+</html>

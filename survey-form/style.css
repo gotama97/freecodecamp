@@ -1,0 +1,17 @@
+:root{
+    --bg-color:rgba(38, 173, 155, 0.589);  
+    --color-dark-blue-alpha :rgba(38, 70, 173, 0.295); 
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1rem;
+}
+
+.text-center{
+    text-align: center;
+}
