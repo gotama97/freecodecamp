@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Survey Form</title>
 </head>
-<body> 
+
+<body>
     <div class="container">
         <header>
             <h1 id="title" class="text-center">PUG SURVEY FORM</h1>
@@ -15,39 +17,57 @@
         </header>
         <div class="div-form">
             <form id="survey-form">
-                       <section class="form-group">
-                        <label id="name-label" for="name">INTRODUCE YOUR NAME</label><br>
-                        <input type="text" 
-                        name="name"
-                        id="name"
-                        placeholder="NAME HERE"
-                        required>
-                       </section>
-                       <section class="form-group">
-                        <label id="email-label" for="email">INTRODUCE YOUR EMAIL</label><br>
-                        <input type="email" 
-                        name="email" 
-                        id="email"
-                        placeholder="EMAIL HERE" 
-                        required>
-                    </section>
-                    <section class="form-group">
-                        <label id="age-label" for="age">INTRODUCE YOUR AGE</label><br>
-                        <input type="number" 
-                        name="age"
-                        id="age" 
-                        min="0"
-                        max="99"
-                        placeholder="AGE HERE"
-                        required 
-                        >
-                    </section>
-                    <section class="form-group">
-                        <label for="dropdown" id="dropdown-label">DROPDOWNEA ALGO</label>
-                    </section>
+                <section class="form-group">
+                    <label id="name-label" for="name">INTRODUCE YOUR NAME</label><br><br>
+                    <input type="text" name="name" id="name" placeholder="NAME HERE" required>
+                </section>
+                <section class="form-group">
+                    <label id="email-label" for="email">INTRODUCE YOUR EMAIL</label><br><br>
+                    <input type="email" name="email" id="email" placeholder="EMAIL HERE" required>
+                </section>
+                <section class="form-group">
+                    <label id="number-label" for="age">INTRODUCE YOUR AGE</label><br><br>
+                    <input type="number" name="age" id="number" min="0" max="99" placeholder="AGE HERE" required>
+                </section>
+                <section class="form-group">
+                    <label for="dropdown" id="dropdown-label">DROPDOWNEA ALGO</label><br><br>
+                    <select name="pug" id="dropdown">
+                        <option value="sad">SAD</option>
+                        <option value="angry">ANGRY</option>
+                        <option value="happy">HAPPY</option>
+                    </select>
+                </section>
+                <section class="form-group">
+                    <fieldset>
+                        <legend>FAVORITE TOYS</legend>
+                        <input type="radio" name="toy" id="bottle" value="bottle">
+                        <label for="bottle">BOTTLE</label><br>
+                        <input type="radio" name="toy" id="coffe" value="coffe">
+                        <label for="coffe">COFFE</label><br>
+                        <input type="radio" name="toy" id="clothes" value="clothes">
+                        <label for="clothes">CLOTHES</label>
+                    </fieldset>
+                </section>
+                <section class="form-group">
+                    <label for="gear">GEAR THAT YOU HAVE</label><br><br>
+                    <input type="checkbox" name="gear1" id="leash" value="leash">
+                    <label for="leash">LEASH</label>
+                    <input type="checkbox" name="gear2" id="ball" value="ball">
+                    <label for="ball">BALL</label>
+                    <input type="checkbox" name="gear3" id="carpet" value="carpet">
+                    <label for="carpet">CARPPET</label>
+                </section>
+                <section class="form-group">
+                    <label for="comments">COMMENTS HERE</label><br><br>
+                    <textarea name="comments" id="comments" cols="40" rows="4" placeholder="COMMENTS"></textarea>
+                </section>
+                <section class="form-group">
+                    <input type="submit" value="send" id="submit">
+                </section>
             </form>
         </div>
     </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>

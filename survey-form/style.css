@@ -1,17 +1,57 @@
-:root{
-    --bg-color:rgba(38, 173, 155, 0.589);  
-    --color-dark-blue-alpha :rgba(38, 70, 173, 0.295); 
-}
 *,
-*::after,
-*::before{
-    box-sizing: border-box;
-}
-
-body{
-    font-size: 1rem;
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    color:darkred ;
 }
 
 .text-center{
     text-align: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1em;
+    margin: 2rem;
+    padding: 2rem;
+    background-image: linear-gradient(0deg,#2076D4, #967CE0);
+
+}
+
+header{
+    margin: 2rem;
+}
+.div-form{
+    padding: 2em;
+}
+
+.form-group{
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="text"]{
+    text-align: center;
+}
+
+input[type="email"]{
+    text-align: center;
+}
+
+select{
+    width: 11rem;
+}
+input[type="submit"]{
+    width:8rem;
+    font-size: 1.2em;
+}
+textarea{
+    text-align: center;
+}
+input[type="number"]{
+    width: 11rem;
 }
