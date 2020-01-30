@@ -33,7 +33,7 @@ button{
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10% 20% repeat(3,30%) 10%;
+    grid-template-rows: 10% 20% repeat(3,40%) 10%;
     grid-template-areas: "header"
                         "email-form"
                         "features"
@@ -117,7 +117,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     grid-area: email-form;
-    margin: .2em 3em;
+    margin: 3.5em 3em;
     padding: 0em 1em;
     background-color: #fff;
     border-radius: 10px;
@@ -129,7 +129,6 @@ align-items: center;
 }
 /*TITLE*/
 .email-form h3{
-    position: relative;
     bottom: 1em;
     font-size: 1.4em;
 }
@@ -146,11 +145,40 @@ align-items: center;
     position: relative;
     top: 1em;
     background-color: #efefef;
+    cursor: pointer;
 }
 
 /*-------------FEATURES----------------*/
 .features{
     grid-area: features;
+    display: flexbox;
+    flex-direction: column;
+    margin: 1em 2em;
+    padding: 1em;
+    background-color:#fdfdfd;
+    align-items: center;
+    justify-content: center;
+}
+/*ITEM*/
+.features .item{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.features .item .icon{
+    width: 17%;
+}
+.features .item .icon .fas{
+    width: 100%;
+    font-size: 1.9em;
+    margin: 0 .5em;
+}
+/*MEDIA QUERY FEATURES*/
+@media (max-width:400px){
+    .features .item .feat-content span{
+        font-size: .9em;
+    }
 }
 /*----------VIDEO------------*/
 .video{
