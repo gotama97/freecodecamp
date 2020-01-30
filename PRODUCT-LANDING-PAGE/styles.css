@@ -1,3 +1,4 @@
+/*------------GLOBAL STYLES------------------*/
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,10 @@
 
 body{
     font-size: 16px;
-    background: linear-gradient(-45deg,#4f3f99,#5da8ae);
+    background-color: cornsilk;
+    background: url('./img/drumsticks.png');
+    background-repeat: space;
+    background-size:5em;
 }
 
 a{
@@ -23,13 +27,13 @@ button{
     border: none;
     background: none;
 }
-
+/*-------------CONTAINERS---------------*/
 .container{
     width: 100%;
-    height: 1000vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 70px repeat(4,1fr) 50px;
+    grid-template-rows: 10% 20% repeat(3,30%) 10%;
     grid-template-areas: "header"
                         "email-form"
                         "features"
@@ -37,9 +41,11 @@ button{
                         "cards"
                         "footer";
 }
+
 /*--------------HEADER-----------*/
 .header{
     width: 100%;
+    position: fixed;
     background-color: #e7e7e7;
     grid-area: header;
     display: flex;
@@ -66,17 +72,82 @@ align-items: center;
 /*LINKS*/
 .header .nav{
     width: 40%;
+    position :relative;
+    top: 4px;
 }
 
 .header .nav #nav-bar{
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
-
-/*---------EMIL-FORM-------------*/
-.email-form{
-    grid-area: email-form;
+/*MEDIA QUERY LINKS*/
+@media (max-width:500px){
+    body{
+        font-size: 14px;
+    }
+    .header .nav #nav-bar span{
+        margin: 0 .4em;
+    }
 }
+
+@media (max-width:400px){
+    body{
+        font-size: 12px;
+    }
+    .header .logo{
+        display: flex;
+        align-items: center;
+    }
+    .header .logo #header-img{
+        margin: .4em .4em;
+    }
+    .header .logo span{
+        position: relative;
+        top: 4px;
+        margin-left: .9em;
+    } 
+
+}
+
+/*-------------------EMIL-FORM-------------*/
+.email-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: email-form;
+    margin: .2em 3em;
+    padding: 0em 1em;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.email-form .form{
+    display: flex;
+    flex-direction: column;
+}
+/*TITLE*/
+.email-form h3{
+    position: relative;
+    bottom: 1em;
+    font-size: 1.4em;
+}
+/*INPUT*/
+.email-form .form .email{
+    position: relative;
+    right: 3.7em;
+    border: none;
+    width: 170%;
+    text-align: center;
+}
+/*BUTTON*/
+#submit{
+    position: relative;
+    top: 1em;
+    background-color: #efefef;
+}
+
 /*-------------FEATURES----------------*/
 .features{
     grid-area: features;
