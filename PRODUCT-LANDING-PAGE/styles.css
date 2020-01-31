@@ -33,7 +33,7 @@ button{
     height: 100vh;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 10% 20% repeat(3,40%) 10%;
+    grid-template-rows: 10% 20% repeat(2,40%) 10%;
     grid-template-areas: "header"
                         "email-form"
                         "features"
@@ -107,7 +107,15 @@ align-items: center;
         top: 4px;
         margin-left: .9em;
     } 
-
+    .features .item .feat-content span{
+        font-size: .9em;
+    }
+    .video{
+        width: 100%;
+    }
+    .video iframe{
+        transform: scale(.1);
+    }
 }
 
 /*-------------------EMIL-FORM-------------*/
@@ -135,16 +143,20 @@ align-items: center;
 /*INPUT*/
 .email-form .form .email{
     position: relative;
-    right: 3.7em;
+    margin: 1em .3em;
+    right: 3.8em;
     border: none;
     width: 170%;
     text-align: center;
 }
 /*BUTTON*/
-#submit{
+.email-form .form input[type=submit]{
     position: relative;
+    border: none;
+    background: none;
     top: 1em;
-    background-color: #efefef;
+    width: 100%;
+    background-color: #f2f2f2;
     cursor: pointer;
 }
 
@@ -174,20 +186,20 @@ align-items: center;
     font-size: 1.9em;
     margin: 0 .5em;
 }
-/*MEDIA QUERY FEATURES*/
-@media (max-width:400px){
-    .features .item .feat-content span{
-        font-size: .9em;
-    }
-}
+
 /*----------VIDEO------------*/
 .video{
     grid-area: video;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
 }
-/*-----------CARDS---------------*/
-.cards{
-    grid-area: cards;
+.video iframe{
+    margin-top: 2em;
+    transform: scale(1.1);
 }
+
 /*----------FOOTER---------------*/
 .footer{
     grid-area: footer;
