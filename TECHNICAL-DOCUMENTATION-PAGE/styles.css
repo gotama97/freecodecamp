@@ -19,6 +19,11 @@ p{
     font-size: .8em;
 }
 
+ul{
+    margin-left: .9em;
+    margin-bottom: .6em;
+}
+
 /*------------------NAVBAR----------------------*/
 #navbar{
     display: flexbox;
@@ -29,6 +34,7 @@ p{
     height: 100%;
     width: 30%;
     border-right: 1px solid;
+    overflow-y: auto;
     background-color: rgba(137, 43, 226, 0.247);
 }
 #navbar ul{
@@ -36,7 +42,6 @@ p{
     padding: 0;
     height: 90%;
     margin-top: .8em;
-    overflow-y: auto;
     overflow-x: hidden;
 }
 #navbar li{
@@ -47,16 +52,17 @@ p{
 
 /*--------------------MAIN CONTENT--------------------------*/
 #main-doc{
-    margin-top: .2em;
-    padding:.8em;
+    width:70%;
+    padding:1em;
     background-color:#dedede;
     position: absolute;
     left:30%;
 }
 #main-doc .main-section{
     width: 100%;
-    background-color: cadetblue;
+    background-color: #fff;
     padding: .5em;
+    margin:.3em auto;
 }
 
 #main-doc header{
@@ -81,7 +87,7 @@ p{
     }
     /*---------------MAIN CONTENT------------------*/
     #main-doc{
-        background-color: darkblue;
+        background-color: #fff;
         margin-top: .1em;
         padding:.1em;
         position: absolute;
